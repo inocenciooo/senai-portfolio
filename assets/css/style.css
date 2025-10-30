@@ -1,0 +1,249 @@
+#cabecalho {
+  min-height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 0.5rem;
+  border-bottom: 1px solid black;
+}
+#cabecalho ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#cabecalho li {
+  font-weight: 500;
+}
+#cabecalho li:first-child {
+  font-weight: bold;
+}
+
+#cabecalho img {
+  width: 5rem;
+  border-radius: 100%;
+}
+
+#hero {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 0rem 25rem;
+}
+
+.home h1 {
+  font-size: 8rem;
+  font-weight: normal;
+}
+
+.home h1 span {
+  font-weight: bold;
+}
+
+.home p {
+  font-weight: 600;
+  margin-block: 2rem;
+}
+
+.social-medias {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-medias svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.social-medias svg:hover {
+  color: tomato;
+}
+
+.button {
+  margin-block: 2.5rem;
+}
+
+.button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+  border-radius: 18px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.button svg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.button a:hover {
+  background-color: black;
+  color: white;
+}
+
+.video {
+  margin-top: 10rem;
+}
+
+.video iframe {
+  width: 100%;
+}
+.introducao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  width: 100vw;
+  padding: 5rem 0rem;
+}
+
+.introducao h2 {
+  margin-block: 15rem;
+  width: 30rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.list-area ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.list-area ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 8.5rem;
+  width: 8.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.list-area ul li:hover {
+  cursor: default;
+  color: white;
+  border: 1px solid white;
+}
+
+.list-area ul li span {
+  order: 1;
+}
+
+#projetos {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+#projetos > :nth-child(odd) .imagem {
+  order: 1;
+}
+
+#projetos > :nth-child(odd) .projeto-info {
+  align-items: flex-end;
+}
+
+.projeto {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.projeto .projeto-info {
+  width: 50%;
+}
+
+.projeto .imagem {
+  width: 50%;
+}
+
+.projeto .imagem img {
+  max-width: 60rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 1rem -0.3rem black;
+}
+
+#projetos h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: 10rem;
+}
+
+.projeto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projeto-info h3 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.projeto-info p {
+  font-weight: 600;
+  margin-block: 1.5rem;
+}
+
+.projeto-info > ul li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-block: 0.8rem;
+}
+
+.projeto-info > ul li::before {
+  left: 0;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/caixa-de-selecaox24.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.projeto-info .list-area {
+  margin-top: 2rem;
+}
+
+.projeto-info .list-area li:hover {
+  color: tomato;
+  border: 1px solid tomato;
+}
+
+.projeto-info div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+.sobre-min {
+  display: flex;
+}
+
+.sobre-min .foto {
+  border-radius: 100%;
+  overflow: hidden;
+}
