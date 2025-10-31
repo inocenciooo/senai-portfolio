@@ -280,6 +280,7 @@ section {
   margin-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 6rem;
 }
 
 .curriculo > :first-child {
@@ -297,6 +298,92 @@ section {
   font-size: 1.6rem;
 }
 
-.curriculo .checklist{
+.curriculo .checklist {
   margin-left: 2rem;
+}
+
+.fac-curso {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fac-curso details {
+  background-color: rgb(218, 218, 218);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.fac-curso p {
+  margin: 1rem;
+}
+.fac-curso summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.fac-curso summary:hover {
+  background-color: #0077b6;
+}
+
+.fac-curso summary:hover svg {
+  color: black;
+}
+
+.fac-curso svg {
+  color: #0077b6;
+  width: 2rem;
+  height: 2rem;
+}
+
+.fac-curso details[open] svg {
+  transform: rotate(90deg);
+  color: black;
+}
+.fac-curso details[open] summary {
+  background-color: #0077b6;
+}
+
+#contato {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100vw;
+}
+
+#contato h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-block: 2rem;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.redes-sociais svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 202, 202);
 }
