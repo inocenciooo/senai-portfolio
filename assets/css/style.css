@@ -206,14 +206,14 @@ section {
   margin-block: 1.5rem;
 }
 
-.projeto-info > ul li {
+.checklist li {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   margin-block: 0.8rem;
 }
 
-.projeto-info > ul li::before {
+.checklist li::before {
   left: 0;
   content: "";
   width: 2rem;
@@ -241,9 +241,62 @@ section {
 
 .sobre-min {
   display: flex;
+  gap: 5rem;
+}
+
+.sobre-min h2 {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+.sobre-min p {
+  line-height: 2rem;
+  text-align: justify;
 }
 
 .sobre-min .foto {
   border-radius: 100%;
-  overflow: hidden;
+  width: 100rem;
+}
+
+.foto img {
+  border-radius: 100%;
+}
+
+.externo-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sobre-min > div ul li {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.curriculo {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.curriculo > :first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.curriculo h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-block: 2rem;
+}
+
+.curriculo h6 {
+  font-size: 1.6rem;
+}
+
+.curriculo .checklist{
+  margin-left: 2rem;
 }
