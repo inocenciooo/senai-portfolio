@@ -1,0 +1,57 @@
+@media (max-width: 1400px) {
+  .projeto {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    padding: 0rem 3rem;
+  }
+
+  .sobre-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .foto img {
+    width: 40rem;
+  }
+  .sobre-min > :last-child {
+    max-width: 90rem;
+    padding: 2rem;
+  }
+  .curriculo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .experiencia p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    text-align: center;
+  }
+  .home h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .redes-sociais {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home h1 {
+    font-size: 3.5rem;
+  }
+  .foto img {
+    width: 30rem;
+  }
+  .video iframe {
+    width: 95vw;
+  }
+}

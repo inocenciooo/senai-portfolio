@@ -94,10 +94,13 @@ section {
 
 .video {
   margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video iframe {
-  width: 100%;
+  width: 80vw;
 }
 .introducao {
   display: flex;
@@ -170,11 +173,11 @@ section {
 }
 
 .projeto .projeto-info {
-  width: 50%;
+  width: 50rem;
 }
 
 .projeto .imagem {
-  width: 50%;
+  width: 50rem;
 }
 
 .projeto .imagem img {
@@ -240,7 +243,8 @@ section {
 }
 
 .sobre-min {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   gap: 5rem;
 }
 
@@ -256,7 +260,6 @@ section {
 
 .sobre-min .foto {
   border-radius: 100%;
-  width: 100rem;
 }
 
 .foto img {
@@ -277,10 +280,11 @@ section {
 }
 
 .curriculo {
-  margin-top: 8rem;
+  padding-block: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
+  border-bottom: 1px solid black;
 }
 
 .curriculo > :first-child {
@@ -350,9 +354,6 @@ section {
 
 #contato {
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  width: 100vw;
 }
 
 #contato h2 {
@@ -381,9 +382,12 @@ section {
 }
 
 footer {
+  border-top: 1px solid black;
   height: 15vh;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgb(202, 202, 202);
 }
