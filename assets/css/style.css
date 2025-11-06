@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+
+
+html {
+  font-family: "Roboto";
+}
+
 #cabecalho {
   min-height: 8vh;
   width: 100vw;
@@ -6,16 +14,30 @@
   align-items: center;
   padding-block: 0.5rem;
   border-bottom: 1px solid black;
+  font-family: "League Spartan";
 }
+
 #cabecalho ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
+
 #cabecalho li {
   font-weight: 500;
 }
+
+#cabecalho li a {
+  padding: 1.2rem 1rem 1rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+#cabecalho li a:hover {
+  background-color: tomato;
+}
+
 #cabecalho li:first-child {
   font-weight: bold;
 }
@@ -102,6 +124,7 @@ section {
 .video iframe {
   width: 80vw;
 }
+
 .introducao {
   display: flex;
   flex-direction: column;
@@ -155,11 +178,12 @@ section {
   flex-direction: column;
   gap: 10rem;
 }
-#projetos > :nth-child(odd) .imagem {
+
+#projetos> :nth-child(odd) .imagem {
   order: 1;
 }
 
-#projetos > :nth-child(odd) .projeto-info {
+#projetos> :nth-child(odd) .projeto-info {
   align-items: flex-end;
 }
 
@@ -272,7 +296,7 @@ section {
   gap: 3rem;
 }
 
-.sobre-min > div ul li {
+.sobre-min>div ul li {
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -287,7 +311,7 @@ section {
   border-bottom: 1px solid black;
 }
 
-.curriculo > :first-child {
+.curriculo> :first-child {
   display: flex;
   flex-direction: column;
 }
@@ -300,6 +324,10 @@ section {
 
 .curriculo h6 {
   font-size: 1.6rem;
+}
+
+.curriculo .formacao div {
+  margin-block: 1rem;
 }
 
 .curriculo .checklist {
@@ -317,9 +345,11 @@ section {
   border-radius: 6px;
   overflow: hidden;
 }
+
 .fac-curso p {
   margin: 1rem;
 }
+
 .fac-curso summary {
   display: flex;
   align-items: center;
@@ -348,6 +378,7 @@ section {
   transform: rotate(90deg);
   color: black;
 }
+
 .fac-curso details[open] summary {
   background-color: #0077b6;
 }
@@ -376,6 +407,7 @@ section {
   align-items: center;
   gap: 1.3rem;
 }
+
 .redes-sociais svg {
   width: 2rem;
   height: 2rem;
@@ -390,4 +422,10 @@ footer {
   align-items: center;
   text-align: center;
   background-color: rgb(202, 202, 202);
+}
+
+
+footer span {
+  font-family: "Tangerine";
+  font-size: 3rem;
 }
